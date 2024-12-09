@@ -25,6 +25,7 @@ void computerMove() {
   if (emptySpaces > 0) {
     int randomCell = (int) random(emptySpaces);
     int count = 0;
+    for (int row = 0; row < rows; row++) {
       for (int col = 0; col < cols; col++) {
         if (board[row][col] == 0) {
           if (count == randomCell) {
